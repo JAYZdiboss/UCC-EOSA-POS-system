@@ -2,9 +2,8 @@ Authors:
 Jovan Tucker
 Yahsheena Richards
 
-GitHub Public URL for Code:
-Jovan Tucker GitHub:
-Yahsheena Richards GitHub:
+Jovan Tucker and Yahsheena Richards GitHub Public URL for Code:
+https://github.com/JAYZdiboss/UCC-EOSA-POS-system.git 
 
 Date created: 04/04/2026
 Course: ITT103
