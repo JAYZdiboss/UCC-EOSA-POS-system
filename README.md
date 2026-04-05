@@ -1,2 +1,0 @@
-# UCC-EOSA-POS-system
-A POS system for BEST BUY RETAIL STORE
