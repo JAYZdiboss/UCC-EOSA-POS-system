@@ -1,0 +1,48 @@
+Authors: 
+Jovan Tucker
+Yahsheena Richards
+
+GitHub Public URL for Code:
+Jovan Tucker GitHub:
+Yahsheena Richards GitHub:
+
+Date created: 04/04/2026
+Course: ITT103
+
+
+-Purpose of program:
+This program was created as a functional Point-Of-Sale (POS) interface capable of accepting user input from the start to the end of a shopping interaction. It is capable of processing multiple customers while keeping an updated stock of available store items as well as generating a correct receipt for each customer.
+
+-How to run it:
+The user should navigate through the menu options using inputs in the form of numbers ranging from 1-6. Any input outside of this range will lead to an "Invalid option" message, ensuring that it is utilized as instructed. 
+The program allows users to display the store's listing of items(Option 1), Add items from that listing to their "Cart"(Option 2), Remove already selected items from their "Cart"(Option 3), display items already in their "Cart"(Option 4) and checkout items(Option 5). 
+
+The user can loop through these menu options until all selected items are finalized in the "Checkout" option, once "Checkout" is selected the user is given one final chance to confirm whether or not they would like to "Checkout" their "Cart" and once confirmation is given with the prompt "Y/y" the program will display the items being checkout out, their unit price, quantity, total for those items as well as the gross total and net total after sales tax is added. If the total bill exceeds $5,000 dollars then a %5 discount is applied to the gross total and is subtracted from the net total. 
+
+	Afterwhich, the user must enter the amount they are paying as an integer and if the amount is less than the net total due; the program will display an "insufficient amount" message and return you to the menu, the cart items will remain and the user would have to intitiate the checkout process once more.
+Once the checkout process is completed and the sufficient amount is entered, the program will display a receipt with the company's name, the items purchased, thr subtotal, discount amount(if applicable), sales tax amount, net total due, amount paid and the change as well as a thank you message.
+
+	Finally, a message requesting whether or not you would like to serve another customer will be displayed, if the user input is "Y/y" the cart will be cleared which in a sense allows the program to loop and process multiple customer transactions while updating the stock of items remaining after checkout.
+Additionally the program displays a "Low stock warning" whenever you view the store listing and an item falls below "5".
+
+-Assumptions and limitations:
+It is assumed that whoever is utilizing this interface is fully capable of reading and following the necessary inputs needed to complete the full shopping and checkout process, in the event the wrong input is entered, a suitable error message should be displayed, returning the user to the menu and allowing them to reattempt the menu option. There are some limitations that will lead to the program crashing all together though such as entering string characters in sections that are expecting an integer or float, for example: the check out option where it requests "The payment amount"
+
+
+-Modifications:
+March 29, 2026 - Script creation, a list was created called store_items and a for loop that displays those items was implemented.
+March 30, 2026 - Print statments was added as a test for user input.
+March 31, 2026 - Various changes were made to the print statement and for loop.
+March 31, 2026 - Various variables were created as a means to track store item stocks, various changes were done to print statements, while loop was implemented along with if statements.
+March 31, 2026 - Troubleshooting and debugging was done as well as addition of shopping cart display concept created.
+March 31, 2026 - IF, ELIF and ELSE statements were added to the WHILE loop for individual store items in order to recognise user input and proceeed accordingly.
+April 2, 2026 - The idea of using a list and individual variables for management stocks was scrapped and instead a nested dictionary was created to manage items, stocks and prices for those items.
+April 2, 2026 - The method used for displaying the store items was changed to display the nested dictionary items and its variables instead.
+April 3, 2026 - The IF,ELIF and ELSE statement as well as the WHILE loop was removed in favour of a default function being used that could recognise user input and map the input of the user or "selected item" to the dictionary.
+April 3, 2026 - Default function named "add_to_checkout" was created as a formula for retrieving an item from the list of store items along with their values in order to add them to a new dictionary called "checkout_list" which will be used during the check out process. A default functions called "remove_from_checkout" was also created to undo and return items and their quantities from the checkout dictionary back to the store catalog.
+April 3, 2026 -  Defualt functions where added for the checkout process and Menu user interface(UI) and various error handling exceptions were added for invalid inputs.
+April 3, 2026 - Code was tested and debugged, various labels/commentary was added to help clarify sections of the code, code was now executable and various test runs were conducted to test formulas and calculations for accuracy.
+April 3, 2026 - Receipt generation was added to the checkout functions and formulas as well as user inputs were implemented for accuracy and to check for discount eligibility based on a condition. Quantities for stock was also adjusted for testing purposes
+April 3, 2026 - A low stock warning was implemented as well as a means for the functions to loop if there were multiple transactions to be processed as well as a means to end the program cleanly without error messages.
+April 4, 2026- "milo" and "lasco" was added to dictionary, replacing "bleach" and "matches". Prices were also adjusted for more realism.
+April 4, 2026 - Small adjustments were done to labels and formatting, file was renamed to group name and to match submission format.
